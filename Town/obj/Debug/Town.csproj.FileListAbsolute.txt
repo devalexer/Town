@@ -1,0 +1,6 @@
+c:\users\allie\documents\visual studio 2017\Projects\Town\Town\bin\Debug\Town.exe.config
+c:\users\allie\documents\visual studio 2017\Projects\Town\Town\bin\Debug\Town.exe
+c:\users\allie\documents\visual studio 2017\Projects\Town\Town\bin\Debug\Town.pdb
+c:\users\allie\documents\visual studio 2017\Projects\Town\Town\obj\Debug\Town.csprojResolveAssemblyReference.cache
+c:\users\allie\documents\visual studio 2017\Projects\Town\Town\obj\Debug\Town.exe
+c:\users\allie\documents\visual studio 2017\Projects\Town\Town\obj\Debug\Town.pdb

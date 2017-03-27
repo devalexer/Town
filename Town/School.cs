@@ -40,13 +40,13 @@ namespace Town
             return this.Name;
         }
 
-        public string myToString()
+        public override string ToString()
         {
             return $"{BuildingType} : {Name}";
         }
 
 
-        private double _squareFootage; //(<-backing variable)
+        private double _squareFootage; 
 
         public double SquareFootage
         {
@@ -101,11 +101,10 @@ namespace Town
             return AmountOfMoney;
         }
 
-        ////TeacherStudentRatio as a method that returns a string in the format ${teacher}:{student}
-        //public string TeacherStudentRatio(int NumberofStudents, int NumberofTeachers)
-        //{
-        //    TeacherStudentRatio = NumberofStudents / NumberofTeachers;
-        //    return $"{Teacher}:{Student}";
-        //}
+        //TeacherStudentRatio as a method that returns a string in the format ${teacher}:{student}
+        public string TeacherStudentRatio()
+        {
+            return $"{NumberOfTeachers}:{NumberofStudents}";
+        }
     }
 }

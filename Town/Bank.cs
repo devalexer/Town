@@ -29,7 +29,19 @@ namespace Town
         private double Deposit { get; set; }
         private double Withdrawal { get; set; }
 
-        private double _squareFootage; //(<-backing variable)
+
+        public string DisplayName()
+        {
+            return this.Name;
+        }
+
+        public override string ToString()
+        {
+            return $"{BuildingType} : {Name}";
+        }
+
+
+        private double _squareFootage; 
 
         public double SquareFootage
         {

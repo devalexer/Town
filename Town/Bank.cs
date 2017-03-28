@@ -95,6 +95,11 @@ namespace Town
             AmountOfMoney -= Amount;
             return AmountOfMoney;
         }
+
+        public Bank(string amountofMoney)
+        {
+
+        }
     }
 }
 

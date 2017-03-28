@@ -11,28 +11,42 @@ namespace Town
         static void Main(string[] args)
         {
 
-            List<House> houses = new List<House>();
-            houses.Add(new House() { Name = "Home" });
+            var houses = new List<House>();
+            houses.Add("Home");
             houses.Add(new House() { Name = "Casa" });
             houses.Add(new House() { Name = "Crib" });
             houses.Add(new House() { Name = "Residence" });
 
-            List<Bank> banks = new List<Bank>();
+            List<School> banks = new List<Bank>();
             banks.Add(new Bank() { Name = "Scrooge National Bank" });
             banks.Add(new Bank() { Name = "Miserly Community Bank" });
             banks.Add(new Bank() { Name = "Predatory Bank" });
             banks.Add(new Bank() { Name = "Parsimonious Intl. Bank" });
 
-            List<School> schools = new List<School>();
+           var schools = new List<School>();
             schools.Add(new School() { Name = "Knowledgable College" });
             schools.Add(new School() { Name = "Brainy High School" });
             schools.Add(new School() { Name = "Astute Middle School" });
             schools.Add(new School() { Name = "Inventive Elementary School" });
 
+            var myHouse = new House("brick");
+
+            //Add a constructor to the bank that sets the amount of money
             //public amountOfMoney()
             //{
 
             //}
+
+
+
+
+
+            //for person to walk
+            var myHouse = new House("brick");
+
+            var hank = new Person { Name = "Hank" };
+
+            myHouse.Occupants.Add(hank);
 
         }
     }

@@ -18,9 +18,9 @@ namespace Town
         public double Length { get; set; }
         public int Floors { get; set; }
         public int BathRooms { get; set; }
-        public string _fullAddress { get; set; }
         public int CurrentOccupants { get; set; }
         private double AmountOfMoney { get; set; }
+        public string FullAddress { get; set; }
         private string Address1 { get; set; }
         private string Address2 { get; set; }
         private string City { get; set; }
@@ -28,6 +28,7 @@ namespace Town
         private string Zip { get; set; }
         private double Deposit { get; set; }
         private double Withdrawal { get; set; }
+        public double NumberOfFloors { get; set; }
 
 
         public string DisplayName()
@@ -41,25 +42,20 @@ namespace Town
         }
 
 
-        private double _squareFootage; 
-
         public double SquareFootage
         {
             get
             {
-                _squareFootage = Length * Width;
-                return _squareFootage;
+                return Length * Width * this.NumberOfFloors;
             }
         }
 
-        private double _volume;
 
         public double Volume
         {
             get
             {
-                _volume = Length * Width * Height;
-                return _volume;
+                return Length * Width * Height;
             }
         }
 
@@ -67,8 +63,7 @@ namespace Town
         {
             get
             {
-                _fullAddress = $"{Address1}, {Address2}, {City}, {State}, {Zip}";
-                return _fullAddress;
+                return $"{Address1}, {Address2}, {City}, {State}, {Zip}";
             }
         }
 
@@ -83,6 +78,19 @@ namespace Town
             CurrentOccupants--;
             return CurrentOccupants;
         }
+
+        public List<Person> Occupants { get; set; } = new List<Person>();
+
+        //If you wanted to create method to accomplish above line instead:
+        //public void AddPersonToBuilding(Person peep)
+        //{
+        //this.Occupants.Add(peep)
+        //}
+
+        //public void RemovePersonFromBuilding(Person peep)
+        //{
+        //    this.Occupans.Remove(peep);
+        //}
     }
 }
 
